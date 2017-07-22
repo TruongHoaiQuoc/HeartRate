@@ -1,0 +1,47 @@
+page-login {
+  .scroll-content {
+    background-color: #42c7ff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+    margin: 0 auto;
+  }
+
+ 
+
+  ion-row {
+    align-items: center;
+    text-align: center;
+  }
+
+  ion-item {
+    
+    padding-left: 10px !important;
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    opacity: 0.7;
+    font-size: 0.9em;
+  }
+
+  ion-list {
+    margin: 0;
+  }
+.register{
+ 
+  color: white;
+}
+  .login-button {
+    width: 90%;
+  
+    font-size: 0.9em;
+    border: 1px solid #fff;
+    background-color: #39acdc;
+  }
+  
+}

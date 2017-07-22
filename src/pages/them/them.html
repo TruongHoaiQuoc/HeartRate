@@ -1,0 +1,22 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>Thêm thành viên</ion-title>
+        <ion-buttons end>
+            <button (click)="save()" ><ion-icon name="checkmark"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+ 
+<ion-content class="add">
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Tên Thành Viên</ion-label>
+            <ion-input type="text" [(ngModel)]="todoItem"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Số Điện Thoại Thành Viên</ion-label>
+            <ion-input type="text" [(ngModel)]="todoSDT"></ion-input>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,28 @@
+﻿<ion-header>
+<ion-navbar>
+  <ion-title>
+    Bluetooth
+  </ion-title>
+  <ion-buttons end>
+   <button outline (click) = "startScanning()">
+    <ion-icon name='bluetooth' is-active="true"> </ion-icon>
+    Scan
+  </button>
+  </ion-buttons>
+</ion-navbar>
+</ion-header> 
+
+<ion-content>
+<ion-list insert>
+    <ion-item-sliding *ngFor="let device of device_list" #slidingItem>
+      <button ion-item (click)="connectToDevice(device)">
+        <h1>Connect Device</h1>
+        <h2>{{device.name}}</h2>
+        <p>{{device.id}}</p>
+        <p>{{device.rssi}}</p>
+      </button>
+    </ion-item-sliding>
+
+  </ion-list>
+  <ion-spinner *ngIf="isScanning==true" name="circles"></ion-spinner>
+</ion-content>
